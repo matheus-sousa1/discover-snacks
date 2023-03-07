@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 .App {
   background: green;
 }
@@ -14,6 +13,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 15px 0px;
 }
 
 .foods {
@@ -23,9 +23,53 @@
   justify-content: center;
   flex-direction: column;
   max-width: 300px;
-  max-height: 400px;
+  min-height: 270px;
 }
 
 .foods img {
   width: 200px;
+}
+
+/* modal */
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(0, 0, 0, 0.7);
+  z-index: 100;
+}
+
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 800px;
+  height: 470px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.close {
+  cursor: pointer;
+  color: green;
+  width: 50px;
+  height: 30px;
+  padding-left: 405px;
+}
+
+.icon {
+  font-size: 30px;
+}
+
+.close:hover {
+  color: black;
+  transition: 0.5s;
 }

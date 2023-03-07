@@ -1,6 +1,7 @@
 import axios from "axios";
 import React from "react";
 import { useEffect, useState } from "react";
+import { MdCancel } from "react-icons/md";
 
 const baseURL = `https://api.spoonacular.com/recipes/informationBulk?ids=782585,716426,715497,715415,716406,644387,715446,782601,795751&apiKey=14bc0ec7cf3541e8850eff3d7244935f`;
 //const FindInstructions = `https://api.spoonacular.com/recipes/informationBulk?ids=&apiKey=14bc0ec7cf3541e8850eff3d7244935f`;
@@ -72,66 +73,73 @@ const Revenues = () => {
 
   return (
     <div>
-      <h1>make Snack</h1>
       <div className="container">
         <div className="foods">
           <img src={revenueimageType[0]} alt="food" />
           <h3>{revenueTitle[0]}</h3>
-
           <button onClick={toggleModal}>Como preparar</button>
-      {isOpen && (
-        <div className="modal">
-          <div className="modal-content">
-            <span className="close" onClick={toggleModal}>
-              <p>{revenueInstructions[0]}</p>
-            </span>
+          {isOpen && (
+            <div className="modal">
+              <div className="modal-content">
+                <span className="close" onClick={toggleModal}>
+                  <MdCancel className="icon" />
+                </span>
+                <img src={revenueimageType[0]} alt="imageM" />
+                <h4>Modo de preparo</h4>
+                <p>{revenueInstructions[0]}</p>
+              </div>
+            </div>
+          )}
         </div>
-        </div>
-        
+
         <div className="foods">
           <img src={revenueimageType[1]} alt="food" />
           <h3>{revenueTitle[1]}</h3>
-          <dialog>{revenueInstructions[1]}</dialog>
+          <button onClick={toggleModal}>Como preparar</button>
+          {isOpen && (
+            <div className="modal">
+              <div className="modal-content">
+                <span className="close" onClick={toggleModal}>
+                  <MdCancel className="icon" />
+                </span>
+                <img src={revenueimageType[1]} alt="imageM" />
+                <h4>Modo de preparo</h4>
+                <p>{revenueInstructions[1]}</p>
+              </div>
+            </div>
+          )}
         </div>
         <div className="foods">
           <img src={revenueimageType[2]} alt="food" />
           <h3>{revenueTitle[2]}</h3>
-          <dialog>{revenueInstructions[2]}</dialog>
         </div>
         <div className="foods">
           <img src={revenueimageType[3]} alt="food" />
           <h3>{revenueTitle[3]}</h3>
-          <dialog>{revenueInstructions[3]}</dialog>
         </div>
         <div className="foods">
           <img src={revenueimageType[4]} alt="food" />
           <h3>{revenueTitle[4]}</h3>
-          <dialog>{revenueInstructions[4]}</dialog>
         </div>
         <div className="foods">
           <img src={revenueimageType[5]} alt="food" />
           <h3>{revenueTitle[5]}</h3>
-          <dialog>{revenueInstructions[5]}</dialog>
         </div>
         <div className="foods">
           <img src={revenueimageType[6]} alt="food" />
           <h3>{revenueTitle[6]}</h3>
-          <dialog>{revenueInstructions[6]}</dialog>
         </div>
         <div className="foods">
           <img src={revenueimageType[7]} alt="food" />
           <h3>{revenueTitle[7]}</h3>
-          <dialog>{revenueInstructions[7]}</dialog>
         </div>
         <div className="foods">
           <img src={revenueimageType[8]} alt="food" />
           <h3>{revenueTitle[8]}</h3>
-          <dialog>{revenueInstructions[8]}</dialog>
         </div>
       </div>
-      </div>
-   
-  )
-}
+    </div>
+  );
+};
 
 export default Revenues;
