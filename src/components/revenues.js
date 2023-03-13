@@ -114,7 +114,7 @@ const Revenues = () => {
 
   return (
     <div>
-      <div className="container">
+      <div className="container" id="revenue">
         <div className="foods">
           <img src={revenueimageType[0]} alt="asparagus" />
           <h3>{revenueTitle[0]}</h3>
