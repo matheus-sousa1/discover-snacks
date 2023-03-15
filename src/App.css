@@ -16,6 +16,13 @@
   gap: 15px 0px;
 }
 
+/*icon*/
+.mylogo img {
+  width: 30px;
+}
+
+/* renenues*/
+
 .foods {
   border: 1px solid black;
   display: flex;
@@ -72,4 +79,9 @@
 .close:hover {
   color: black;
   transition: 0.5s;
+}
+
+/* slide */
+.content-slide {
+  width: 400px;
 }
