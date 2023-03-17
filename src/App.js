@@ -1,7 +1,6 @@
 import "./App.css";
 import Revenues from "./components/revenues";
-
-import Tip from "./components/tip";
+import Carousel from "./carousel/Carousel";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import myLogo from "./img/Revenues.png";
@@ -28,7 +27,7 @@ function App() {
         <Revenues />
       </div>
       <div id="tip">
-        <Tip />
+        <Carousel />
       </div>
 
       <div id="About">
