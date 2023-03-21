@@ -1,14 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 .App {
   background: green;
 }
 
+.App nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 3px solid rgb(100, 63, 7);
+  gap: 0px 600px;
+}
+
 .container {
   display: grid;
+  margin: 30px 0px;
   grid-template-columns: repeat(3, 1fr);
   flex-direction: column;
   align-items: center;
@@ -21,20 +34,81 @@
   width: 30px;
 }
 
+/*sidebar*/
+.sideBar ul {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  gap: 0px 25px;
+  font-size: x-large;
+  width: 400px;
+  font-weight: 700;
+}
+
+.sideBar li {
+  list-style: none;
+}
+
+.sideBar a {
+  color: rgb(100, 63, 7);
+  background-color: green;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.sideBar a:hover {
+  cursor: pointer;
+  color: green;
+  transition: 1s;
+
+  background: rgb(100, 63, 7);
+}
+
 /* renenues*/
 
 .foods {
-  border: 1px solid black;
+  border: 1px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
   max-width: 300px;
+  color: white;
   min-height: 270px;
+  border-radius: 10px;
+  background-color: rgb(100, 63, 7);
 }
 
 .foods img {
   width: 200px;
+}
+
+.foods h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 70px;
+}
+
+.foods button {
+  background-color: green;
+  color: rgb(100, 63, 7);
+  padding: 10px 25px;
+  font-size: large;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.foods button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: green;
+  border: 1px solid green;
+  transition: 1s;
 }
 
 /* modal */
@@ -53,7 +127,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #fff;
+  background: rgb(100, 63, 7);
+  color: white;
   width: 800px;
   height: 470px;
   border-radius: 10px;
@@ -115,4 +190,41 @@
   padding: 0 20px 0 20px;
   white-space: normal;
   color: #617d98;
+}
+
+.carousel-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button-arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.indicators {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.indicators-buttons {
+  border: none;
+  cursor: pointer;
+}
+
+.indicators > button {
+  margin: 5px;
+  background: none;
+}
+
+.indicators-symbol {
+  color: #26343f;
+}
+
+.indicators-symbol-active {
+  color: #ffffff;
 }
