@@ -125,9 +125,11 @@ const Revenues = () => {
                 <span className="close" onClick={toggleModal}>
                   <MdCancel className="icon" />
                 </span>
-                <img src={revenueimageType[0]} alt="asparagus" />
-                <h4>Modo de preparo</h4>
-                <p>{revenueInstructions[0]}</p>
+                <div className="content-main">
+                  <img src={revenueimageType[0]} alt="asparagus" />
+                  <h4>Modo de preparo</h4>
+                  <p>{revenueInstructions[0]}</p>
+                </div>
               </div>
             </div>
           )}
@@ -143,9 +145,11 @@ const Revenues = () => {
                 <span className="close" onClick={modalBrown}>
                   <MdCancel className="icon" />
                 </span>
-                <img src={revenueimageType[2]} alt="brown" />
-                <h4>Modo de preparo</h4>
-                <p>{revenueInstructions[2]}</p>
+                <div className="content-main">
+                  <img src={revenueimageType[2]} alt="brown" />
+                  <h4>Modo de preparo</h4>
+                  <p>{revenueInstructions[2]}</p>
+                </div>
               </div>
             </div>
           )}
@@ -160,9 +164,11 @@ const Revenues = () => {
                 <span className="close" onClick={modalBerry}>
                   <MdCancel className="icon" />
                 </span>
-                <img src={revenueimageType[1]} alt="brown" />
-                <h4>Modo de preparo</h4>
-                {revenueInstructions[1]}
+                <div className="content-main">
+                  <img src={revenueimageType[1]} alt="brown" />
+                  <h4>Modo de preparo</h4>
+                  {revenueInstructions[1]}
+                </div>
               </div>
             </div>
           )}
@@ -177,9 +183,11 @@ const Revenues = () => {
                 <span className="close" onClick={modalLentil}>
                   <MdCancel className="icon" />
                 </span>
-                <img src={revenueimageType[3]} alt="brown" />
-                <h4>Modo de preparo</h4>
-                <p>{revenueInstructions[3]}</p>
+                <div className="content-main">
+                  <img src={revenueimageType[3]} alt="brown" />
+                  <h4>Modo de preparo</h4>
+                  <p>{revenueInstructions[3]}</p>
+                </div>
               </div>
             </div>
           )}
@@ -194,9 +202,11 @@ const Revenues = () => {
                 <span className="close" onClick={modalPea}>
                   <MdCancel className="icon" />
                 </span>
-                <img src={revenueimageType[4]} alt="brown" />
-                <h4>Modo de preparo</h4>
-                <p>{revenueInstructions[4]}</p>
+                <div className="content-main">
+                  <img src={revenueimageType[4]} alt="brown" />
+                  <h4>Modo de preparo</h4>
+                  <p>{revenueInstructions[4]}</p>
+                </div>
               </div>
             </div>
           )}
@@ -211,9 +221,11 @@ const Revenues = () => {
                 <span className="close" onClick={kaleModal}>
                   <MdCancel className="icon" />
                 </span>
-                <img src={revenueimageType[5]} alt="food" />
-                <h4>Modo de preparo</h4>
-                <p>{revenueInstructions[5]}</p>
+                <div className="content-main">
+                  <img src={revenueimageType[5]} alt="food" />
+                  <h4>Modo de preparo</h4>
+                  <p>{revenueInstructions[5]}</p>
+                </div>
               </div>
             </div>
           )}
@@ -228,9 +240,11 @@ const Revenues = () => {
                 <span className="close" onClick={beefModal}>
                   <MdCancel className="icon" />
                 </span>
-                <img src={revenueimageType[6]} alt="food" />
-                <h4>Modo de preparo</h4>
-                <p>{revenueInstructions[6]}</p>
+                <div className="content-main">
+                  <img src={revenueimageType[6]} alt="food" />
+                  <h4>Modo de preparo</h4>
+                  <p>{revenueInstructions[6]}</p>
+                </div>
               </div>
             </div>
           )}
@@ -245,9 +259,11 @@ const Revenues = () => {
                 <span className="close" onClick={beanModal}>
                   <MdCancel className="icon" />
                 </span>
-                <img src={revenueimageType[7]} alt="food" />
-                <h4>Modo de preparo</h4>
-                <p>{revenueInstructions[7]}</p>
+                <div className="content-main">
+                  <img src={revenueimageType[7]} alt="food" />
+                  <h4>Modo de preparo</h4>
+                  <p>{revenueInstructions[7]}</p>
+                </div>
               </div>
             </div>
           )}
@@ -262,9 +278,11 @@ const Revenues = () => {
                 <span className="close" onClick={fagitaModal}>
                   <MdCancel className="icon" />
                 </span>
-                <img src={revenueimageType[8]} alt="food" />
-                <h4>Modo de preparo</h4>
-                <p>{revenueInstructions[8]}</p>
+                <div className="content-main">
+                  <img src={revenueimageType[8]} alt="food" />
+                  <h4>Modo de preparo</h4>
+                  <p>{revenueInstructions[8]}</p>
+                </div>
               </div>
             </div>
           )}

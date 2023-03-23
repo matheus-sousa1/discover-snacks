@@ -9,11 +9,15 @@ function App() {
   return (
     <div className="App">
       <nav>
-        <div className="myLogo">
+        <div className="myLogo" id="home">
           <img style={{ width: 100 }} src={myLogo} alt="logo" />
         </div>
         <div className="sideBar">
           <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+
             <li>
               <a href="#tip">Tips</a>
             </li>

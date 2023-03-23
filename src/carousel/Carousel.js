@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import CarouselItem from "./CarouselItem";
+import {
+  MdArrowCircleLeft,
+  MdArrowCircleRight,
+  MdFiberManualRecord,
+} from "react-icons/md";
 
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -33,6 +38,7 @@ const Carousel = () => {
 
   return (
     <div className="carousel">
+      <p className="title-carousel">Tips</p>
       <div
         className="inner"
         style={{ transform: `translate(-${activeIndex * 100}%)` }}
@@ -48,7 +54,9 @@ const Carousel = () => {
           }}
           className="button-arrow"
         >
-          <span class="material-symbols-outlined">arrow_back_ios</span>
+          <span class="material-symbols-outlined">
+            <MdArrowCircleLeft className="icon-arrow" />
+          </span>
         </button>
         <div className="indicators">
           {items.map((item, index) => {
@@ -66,7 +74,7 @@ const Carousel = () => {
                       : "indicator-symbol"
                   }`}
                 >
-                  radio_button_checked
+                  <MdFiberManualRecord className="icon-circle" />
                 </span>
               </button>
             );
@@ -78,7 +86,9 @@ const Carousel = () => {
             updateIndex(activeIndex + 1);
           }}
         >
-          <span class="material-symbols-outlined">arrow_forward_ios</span>
+          <span class="material-symbols-outlined">
+            <MdArrowCircleRight className="icon-arrow" />
+          </span>
         </button>
       </div>
     </div>
