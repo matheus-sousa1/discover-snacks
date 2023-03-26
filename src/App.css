@@ -10,6 +10,7 @@
   background: green;
   display: flex;
   flex-direction: column;
+
   gap: 10px 0px;
 }
 
@@ -183,7 +184,6 @@
   flex-direction: column;
   justify-content: center;
   background-image: url("./img/backTips.jpg");
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid white;
@@ -194,7 +194,7 @@
 .title-carousel {
   margin-left: 500px;
   color: white;
-  font-size: xx-large;
+  font-size: 2rem;
   margin-top: 20px;
   font-style: italic;
   font-weight: 700;
@@ -273,4 +273,43 @@
 
 .icon-arrow {
   color: white;
+}
+
+/*about*/
+.about {
+  width: 700px;
+  height: 500px;
+  gap: 20px 0px;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  background-color: rgb(100, 63, 7);
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20rem;
+  border-radius: 10px;
+}
+
+.about h3 {
+  color: white;
+  font-weight: 800;
+  font-size: 2rem;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.about p {
+  margin: 0px 100px;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0px 20px;
+  color: rgb(100, 63, 7);
+  background-color: white;
+  border: 3px solid rgb(100, 63, 7);
+  font-weight: bold;
 }

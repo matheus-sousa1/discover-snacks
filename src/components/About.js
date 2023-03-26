@@ -2,8 +2,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <div style={{ width: "400px" }}>
-      <h1>About</h1>
+    <div className="about">
+      <h3>About Us</h3>
       <p>
         eact Router enables "client side routing". In traditional websites, the
         browser requests a document from a web server, downloads and evaluates
