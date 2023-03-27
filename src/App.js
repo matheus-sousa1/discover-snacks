@@ -9,23 +9,23 @@ function App() {
   return (
     <div className="App">
       <nav>
-        <div className="myLogo" id="home">
+        <div className="myLogo" id="#">
           <img style={{ width: 100 }} src={myLogo} alt="logo" />
         </div>
         <div className="sideBar">
           <ul>
             <li>
-              <a href="#home">Home</a>
+              <a href="#">Home</a>
             </li>
 
             <li>
-              <a href="#tip">Tips</a>
+              <a href="#tip">Clue</a>
             </li>
             <li>
-              <a href="#revenue">revenues</a>
+              <a href="#revenue">Revenues</a>
             </li>
             <li>
-              <a href="#About">about</a>
+              <a href="#About">About</a>
             </li>
           </ul>
         </div>

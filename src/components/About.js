@@ -5,19 +5,13 @@ const About = () => {
     <div className="about">
       <h3>About Us</h3>
       <p>
-        eact Router enables "client side routing". In traditional websites, the
-        browser requests a document from a web server, downloads and evaluates
-        CSS and JavaScript assets, and renders the HTML sent from the server.
-        When the user clicks a link, it starts the process all over again for a
-        new page. Client side routing allows your app to update the URL from a
-        link click without making another request for another document from the
-        server. Instead, your app can immediately render some new UI and make
-        data requests with fetch to update the page with new information. This
-        enables faster user experiences because the browser doesn't need to
-        request an entirely new document or re-evaluate CSS and JavaScript
-        assets for the next page. It also enables more dynamic user experiences
-        with things like animation. Client side routing is enabled by creating a
-        Router and linking/submitting to pages with Link and
+        We aim to make recipes available for anyone to learn step by step, even
+        if you have difficulties making a simple recipe or have never prepared
+        any food before, our prepare methods will still serve to show you how to
+        make your favorite foods. The focus is on healthy and tasty recipes, so
+        you can enjoy yourself and have a healthy eating habit. therefore, if
+        you want to learn how to prepare healthy recipes to add to your menu,
+        this is the right place for you.
       </p>
     </div>
   );

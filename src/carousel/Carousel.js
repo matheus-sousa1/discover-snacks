@@ -11,17 +11,17 @@ const Carousel = () => {
   const items = [
     {
       description:
-        "Ao usar o micro-ondas dê preferência para as vasilhas de vidro, segundo especialistas da área médica, certos tipos de plásticos, quando aquecidos podem liberar substâncias muito nociva à saúde",
+        "When using the microwave, give preference to glass containers, according to specialists in the medical field, certain types of plastic, when heated, can release substances that are very harmful to health",
       image: require("../img/microondas.png"),
     },
     {
       description:
-        "Evite manipular carne antes das hortaliças e legumes que serão ingeridos crus, caso isto aconteça, lave bem a pia e bancada, e faça desinfecção com água sanitária, pois a carne passará por um período de cocção que matará todas as bactérias e, os outros alimentos não.",
+        "Avoid handling meat before handling vegetables that will be eaten raw, if this happens, wash the sink and countertop well, and disinfect with bleach, as the meat will go through a cooking period that will kill all the bacteria and the other foods will not.",
       image: require("../img/carne.png"),
     },
     {
       description:
-        "As sobras da refeição devem ser guardadas imediatamente na geladeira, não deixe panelas com alimento sobre o fogão, esta prática faz com que as bactérias se multipliquem facilmente, também não é recomendável acondicionar as panelas na geladeira, o ideal é transferir o alimento para uma vasilha de vidro ou plástico com tampa.",
+        "Meal leftovers should be immediately stored in the fridge, do not leave pans with food on the stove, this practice causes bacteria to multiply easily, it is also not recommended to put the pans in the fridge, the ideal is to transfer the food to a bowl glass or plastic with lid",
       image: require("../img/sobras.png"),
     },
   ];
@@ -38,7 +38,7 @@ const Carousel = () => {
 
   return (
     <div className="carousel">
-      <p className="title-carousel">Tips</p>
+      <p className="title-carousel">Clue</p>
       <div
         className="inner"
         style={{ transform: `translate(-${activeIndex * 100}%)` }}
