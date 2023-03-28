@@ -10,10 +10,13 @@ function App() {
     <div className="App">
       <nav>
         <div className="myLogo" id="#">
-          <img style={{ width: 100 }} src={myLogo} alt="logo" />
+          <img style={{ width: 100, border: "1px solid blue" }} src={myLogo} alt="logo" />
         </div>
-        <div className="sideBar">
-          <ul>
+        
+          <ul >
+          <input type="checkbox" id="checkbox_toggle" />
+ <label for="checkbox_toggle" className="hamburger">&#9776;</label>
+ <div className="sideBar">
             <li>
               <a href="#">Home</a>
             </li>
@@ -26,9 +29,17 @@ function App() {
             </li>
             <li>
               <a href="#About">About</a>
-            </li>
+            </li><ul className="dropdown">
+ <li><a href="/">Home </a></li>
+ <li><a href="/">Clue</a></li>
+ <li><a href="/">Revenues</a></li>
+ <li><a href="/">About</a></li>
+
+ </ul>
+   </div>
           </ul>
-        </div>
+         
+       
       </nav>
 
       <div id="revenue">

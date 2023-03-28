@@ -23,10 +23,44 @@
   gap: 0px 600px;
   position: fixed;
   height: 130px;
-
   z-index: 1;
   width: 100%;
 }
+.App nav .dropdown {
+  background-color:#ab5c16;
+  padding: 1em 0;
+  position: absolute; /*COM RELAÇÃO AOS PAIS*/
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+ }
+ .App .dropdown li + li {
+  margin-top: 10px;
+ }
+ .App .dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+ }
+ .App .dropdown li:hover {
+  background-color: #4c9e9e;
+ }
+
+ .App .dropdown {
+  display: block;
+ }
+
+ .App nav input[type=checkbox]{
+  display: none;
+ } 
+ /*HAMBURGER MENU*/
+ .App .hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+ }
+
+
 
 .container {
   display: grid;
@@ -42,14 +76,14 @@
 }
 
 /*icon*/
-.mylogo img {
-  width: 30px;
+.mylogo  {
+ 
+  border: 1px solid blue;
 }
 
 /*sidebar*/
-.sideBar ul {
+.sideBar  {
   display: flex;
-
   align-items: center;
   justify-content: center;
   gap: 0px 25px;
@@ -324,4 +358,69 @@
   background-color: white;
   border: 3px solid rgb(100, 63, 7);
   font-weight: bold;
+}
+
+/* responsive */
+
+@media (max-width: 1215px){
+  .App nav{
+   gap: 400px;
+  }
+}
+
+@media (max-width:1000px){
+  .App nav{
+    gap: 200px;
+  }
+}
+
+@media (max-width:800px){
+  .sideBar{
+    display: none;
+  }
+  .App nav input[type=checkbox]:checked ~ .sideBar{
+    display: flex;
+    flex-direction: column;
+   }
+   .sideBar { 
+    display:none;
+    position: absolute;
+   background-color: #ab5c16;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 35px;
+    margin-left: 150px;
+   }
+   .sideBar li:hover {
+    display: inline-block;
+    background-color:#ab5c16;
+    transition: 0.3s ease;
+   }
+   .sideBar li + li {
+    margin-top: 20px;
+   }
+
+   .App .hamburger {
+    display: block;
+   }
+   .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+   }
+   .dropdown li:hover {
+    background-color: white;
+   }
+}
+
+@media (max-width: 500px){
+
+  nav{
+    justify-content: space-between;
+  }
+  .sideBar{
+    margin-left: 50px;
+  }
 }
