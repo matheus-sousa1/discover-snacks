@@ -26,27 +26,27 @@
   z-index: 1;
   width: 100%;
 }
-.App nav .dropdown {
+ nav .dropdown {
   background-color:#ab5c16;
   padding: 1em 0;
-  position: absolute; /*COM RELAÇÃO AOS PAIS*/
+  position: absolute; 
   display: none;
   border-radius: 8px;
   top: 35px;
  }
- .App .dropdown li + li {
+  .dropdown li + li {
   margin-top: 10px;
  }
- .App .dropdown li {
+ .dropdown li {
   padding: 0.5em 1em;
   width: 8em;
   text-align: center;
  }
- .App .dropdown li:hover {
-  background-color: #4c9e9e;
+  .dropdown li:hover {
+  background-color: #ab5c16;
  }
 
- .App .dropdown {
+ .dropdown {
   display: block;
  }
 
@@ -58,6 +58,11 @@
   display: none;
   font-size: 24px;
   user-select: none;
+ }
+
+ .App .hamburger:hover{
+  cursor: pointer;
+  color:#964b00;
  }
 
 
@@ -73,12 +78,6 @@
   margin-left: 100px;
 
   gap: 15px 0px;
-}
-
-/*icon*/
-.mylogo  {
- 
-  border: 1px solid blue;
 }
 
 /*sidebar*/
@@ -415,12 +414,18 @@
    }
 }
 
-@media (max-width: 500px){
+@media (max-width: 600px){
 
   nav{
     justify-content: space-between;
   }
+
   .sideBar{
-    margin-left: 50px;
+    margin-left: 180px;
+    width: 220px;
+    font-size: 1rem;
+
   }
+  
 }
+

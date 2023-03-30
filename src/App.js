@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <nav>
         <div className="myLogo" id="#">
-          <img style={{ width: 100, border: "1px solid blue" }} src={myLogo} alt="logo" />
+          <img style={{ width: 100}} src={myLogo} alt="logo" />
         </div>
         
           <ul >
