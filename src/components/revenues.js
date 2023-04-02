@@ -154,6 +154,7 @@ const Revenues = () => {
             </div>
           )}
         </div>
+        <details>
         <div className="foods">
           <img src={revenueimageType[1]} alt="food" />
           <h3>{revenueTitle[1]}</h3>
@@ -287,7 +288,9 @@ const Revenues = () => {
             </div>
           )}
         </div>
+        </details>
       </div>
+      
     </div>
   );
 };

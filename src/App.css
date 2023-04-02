@@ -76,8 +76,12 @@
   margin-top: 160px;
   justify-content: center;
   margin-left: 100px;
-
   gap: 15px 0px;
+}
+
+details[open] {
+ display: grid;
+ grid-template-rows: repeat(3, 1fr);
 }
 
 /*sidebar*/
@@ -371,6 +375,9 @@
   .App nav{
     gap: 200px;
   }
+  .container{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width:800px){
@@ -418,6 +425,9 @@
 
   nav{
     justify-content: space-between;
+  }
+  .container{
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .sideBar{
