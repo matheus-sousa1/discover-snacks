@@ -154,7 +154,7 @@ const Revenues = () => {
             </div>
           )}
         </div>
-        <details>
+       
         <div className="foods">
           <img src={revenueimageType[1]} alt="food" />
           <h3>{revenueTitle[1]}</h3>
@@ -193,7 +193,7 @@ const Revenues = () => {
             </div>
           )}
         </div>
-        <div className="foods">
+        <div className="foods delete">
           <img src={revenueimageType[4]} alt="food" />
           <h3>{revenueTitle[4]}</h3>
           <button onClick={modalPea}>Como preparar</button>
@@ -212,7 +212,7 @@ const Revenues = () => {
             </div>
           )}
         </div>
-        <div className="foods">
+        <div className="foods delete">
           <img src={revenueimageType[5]} alt="food" />
           <h3>{revenueTitle[5]}</h3>
           <button onClick={kaleModal}>Como preparar</button>
@@ -231,7 +231,7 @@ const Revenues = () => {
             </div>
           )}
         </div>
-        <div className="foods">
+        <div className="foods delete">
           <img src={revenueimageType[6]} alt="food" />
           <h3>{revenueTitle[6]}</h3>
           <button onClick={beefModal}>Como preparar</button>
@@ -250,7 +250,7 @@ const Revenues = () => {
             </div>
           )}
         </div>
-        <div className="foods">
+        <div className="foods delete">
           <img src={revenueimageType[7]} alt="food" />
           <h3>{revenueTitle[7]}</h3>
           <button onClick={beanModal}>Como preparar</button>
@@ -269,7 +269,7 @@ const Revenues = () => {
             </div>
           )}
         </div>
-        <div className="foods">
+        <div className="foods delete">
           <img src={revenueimageType[8]} alt="food" />
           <h3>{revenueTitle[8]}</h3>
           <button onClick={fagitaModal}>Como preparar</button>
@@ -288,8 +288,10 @@ const Revenues = () => {
             </div>
           )}
         </div>
-        </details>
+   
       </div>
+
+      <input className="buttonMore" type="submit" value="Ver Mais" />
       
     </div>
   );
