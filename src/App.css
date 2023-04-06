@@ -169,9 +169,7 @@
   transform: scale(0.96);
 }
 
-.buttonMore{
-  display: none;
-}
+
 /* modal */
 .modal {
   position: fixed;
@@ -387,6 +385,32 @@
     display: flex;
     flex-direction: column;
    }
+
+   .container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 65%;
+  }
+
+  .carousel{
+    width: 60%;
+    height:600px;
+    
+  } 
+
+  .title-carousel{
+    margin-left: 40%;
+   
+  }
+
+  .carousel-img{
+    display: none;
+  }
+
+  .delete{
+    display:none;
+  }
    .sideBar { 
     display:none;
     position: absolute;
@@ -425,9 +449,7 @@
   nav{
     justify-content: space-between;
   }
-  .container{
-    grid-template-columns: repeat(1, 1fr);
-  }
+
 
   .sideBar{
     margin-left: 180px;
@@ -435,17 +457,7 @@
     font-size: 1rem;
 
   }
-  .delete{
-    display:none;
-  }
-
-  .buttonMore{
-    display: block;
-  }
-
-  .buttonMore: .delete{
-     display: block;
-  }
+  
   
 }
 

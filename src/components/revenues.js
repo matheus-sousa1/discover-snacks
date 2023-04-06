@@ -291,7 +291,7 @@ const Revenues = () => {
    
       </div>
 
-      <input className="buttonMore" type="submit" value="Ver Mais" />
+ 
       
     </div>
   );
