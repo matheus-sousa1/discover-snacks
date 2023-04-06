@@ -366,6 +366,24 @@
   .App nav{
    gap: 400px;
   }
+  .carousel{
+    width: 70%;
+    height:600px;
+    
+  } 
+
+  .title-carousel{
+    margin-left: 45%;
+  }
+  .carousel-img {
+    display: none;
+  }
+
+  .about{
+    width: 90%;
+    margin-left: 2rem;
+  }
+
 }
 
 @media (max-width:1000px){
@@ -374,6 +392,14 @@
   }
   .container{
     grid-template-columns: repeat(2, 1fr);
+  }
+  .modal-content{
+    width: 90%;
+    height: 700px;
+  }
+
+  .close{
+    padding-left: 400px;
   }
 }
 
