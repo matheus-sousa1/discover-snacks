@@ -3,7 +3,7 @@ import Revenues from "./components/revenues";
 import Carousel from "./carousel/Carousel";
 import About from "./components/About";
 import Footer from "./components/Footer";
-import myLogo from "./img/Revenues.png";
+import myLogo from "./img/logoRevenues.png";
 
 function App() {
   return (
