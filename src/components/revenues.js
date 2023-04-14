@@ -109,7 +109,7 @@ const Revenues = () => {
 
   //console.log(post[0].extendedIngredients[0]);
 
-  // 14bc0ec7cf3541e8850eff3d7244935f
+  
   //https://api.spoonacular.com/recipes/informationBulk?ids=782585,716426,715497,715415,716406,644387,715446,782601,795751
 
   return (
